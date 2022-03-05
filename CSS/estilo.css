@@ -340,3 +340,21 @@ footer {
   bottom: 0%;
   text-align: center;
 }
+
+.card{
+  margin: 2rem;
+  max-width: 400px;
+  padding: 4rem;
+  box-shadow: 0 18px 30px 10px black;
+  display:inline-block;
+}
+
+.card--light {
+  background:rgba(245, 177, 97, 1);
+  padding-top: 6rem;
+}
+
+.card--dark {
+  background: black;
+  color:white;
+}
