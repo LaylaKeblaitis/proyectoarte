@@ -1,2 +1,46 @@
 $color: black; 
 $fondo: rgb(63, 94, 251);
+$mostrar: false;
+
+.gallery {
+@if $mostrar {
+    border: 1px dashed red; 
+}
+}
+
+@each $artistas in Luis Augusto, Liliana Maresca, Carleti Alicia {
+    .#{$artistas} -fondo {
+        color: yellow; 
+        background-color: purple;
+    }
+}
+
+$redes:
+facebook: blue;
+istagram: purple; 
+twitter: green;  
+
+@each $red, $color in $redes {
+    btn--#{red}{
+        background-color: $color;
+    }
+}
+
+.redsocial, .redsocial--social, .redsocial--nueva, .redsocial--mark {
+    border: 1px red;
+    background-color: yellow;
+}
+.redsocial--social {
+    @extend .redsocial;
+    border-top-width: 3px;   
+}
+
+.redsocial--nueva {
+    @extend .redsocial;
+    border: 2px solid blue;
+}
+
+.redsocial--mark {
+    @extend .redsocial;
+    border: 3px solid rgb(75, 75, 167);
+}
